@@ -17,7 +17,6 @@ class MapController extends AppController
      * address=address&key=key
      * ps.address中的空格必须替换成+，否则访问不了api
      */
-
     public function getLatAndLngByAddress()
     {
 //        header("Content-type: text/html; charset=utf-8");
