@@ -1,0 +1,165 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+
+                <!-- boostrap 样式-->
+                <form class="form-horizontal col-lg-6" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> * </div>英文名称：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="name" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> * </div>显示中文名称：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="title" />
+                        </div>
+                    </div>
+                    <div class="form-group" id="status">
+                        <label class="col-lg-3 control-label">状态：</label>
+                        <div class="col-lg-5 checkbox">
+                            <label>
+                                <input name="status" type="radio" value="1" checked/>开启
+                                <input name="status" type="radio" value="0"/>关闭
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">类型：</label>
+                        <div class="col-lg-5">
+                            <select  id="level" class="form-control">
+                                <option value="1">项目</option>
+                                <option value="2">模块</option>
+                                <option value="3">操作</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">父节点：</label>
+                        <div class="col-lg-5">
+                            <select id="pid" class="form-control">
+                                <option value="0">根节点</option>
+                                <volist name="nodeList" id="vo">
+                                    <if condition="$vo.level eq 1">
+                                        <option value="{$vo.id}">{$vo.title}</option>
+                                        <else/>
+                                        <option value="{$vo.id}">&nbsp;&nbsp;|&#45;&#45;&nbsp;&nbsp;{$vo.title}</option>
+                                    </if>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> * </div>排序：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="sort" />
+                        </div>
+                    </div>
+                    <div class="form-group" id="hidden">
+                        <label class="col-lg-3 control-label">是否在左侧隐藏：</label>
+                        <div class="col-lg-5 checkbox">
+                            <label>
+                                <input name="hidden" type="radio" value="0" />是
+                                <input name="hidden" type="radio" value="1" checked/>否
+                            </label>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-3">
+                            <button type="button" class="btn btn-primary" onclick="addNodeHandle()">保存添加</button>
+                        </div>
+                    </div>
+                    <div id="alert" class="alert alert-error">
+                        <strong id="message"></strong>
+                    </div>
+                </form>
+
+
+                <!--<div>英文名称：<input type="text" id="name"/></div>-->
+                <!--<div>显示中文名称：<input type="text" id="title"/></div>-->
+                <!--<div style="font-weight:bolder; " id="status">-->
+                    <!--状态：-->
+                    <!--<input name="status" type="radio" value="1" checked/>开启-->
+                    <!--<input name="status" type="radio" value="0"/>关闭-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--类型：-->
+                    <!--<select  id="level" >-->
+                        <!--<option value="1">项目</option>-->
+                        <!--<option value="2">模块</option>-->
+                        <!--<option value="3">操作</option>-->
+                    <!--</select>-->
+                <!--</div>-->
+                <!--<div>-->
+                    <!--父节点：-->
+                    <!--<select id="pid" >-->
+                        <!--<option value="0">根节点</option>-->
+                        <!--<volist name="nodeList" id="vo">-->
+                            <!--<if condition="$vo.level eq 1">-->
+                                <!--<option value="{$vo.id}">{$vo.title}</option>-->
+                                <!--<else/>-->
+                                <!--<option value="{$vo.id}">&nbsp;&nbsp;|&#45;&#45;&nbsp;&nbsp;{$vo.title}</option>-->
+                            <!--</if>-->
+                        <!--</volist>-->
+                    <!--</select>-->
+                <!--</div>-->
+                <!--<div>排序：<input type="text" id="sort"/></div>-->
+                <!--<input type="button" value="保存添加" onclick="addNodeHandle()"/>-->
+
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+
+        });
+        function addNodeHandle()
+        {
+            var name = $("#name").val();
+            var title = $("#title").val();
+            var status = $('#status input[name="status"]:checked ').val();
+            var level = $("#level").val();
+            var pid = $("#pid").val();
+            var sort = $("#sort").val();
+            var hidden = $('#hidden input[name="hidden"]:checked ').val();
+            var data = {
+                "name": name,
+                "title": title,
+                "status": status,
+                "level": level,
+                "pid": pid,
+                "sort": sort,
+                "hidden":hidden,
+            };
+            var url = "{:U('Rbac/addNodeHandle')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/addNode')}";
+            }
+            else
+            {
+                $("#message").text(result.info);
+                $("#alert").show();
+                setTimeout("setAlertHide()",3000);
+            }
+
+        }
+    </script>
+</block>
+
+

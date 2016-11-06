@@ -1,0 +1,80 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+                <div>你正在为用户组：<span style="font-weight: bold;font-size: 18px;color: #2e6da4">【{$name}】</span>分配权限</div>
+                <form method="post" action="#" id="forms">
+                    <volist name="nodeList" id="vo">
+                        <p style="text-indent: {$vo['level']*20}px;  <if condition='$vo.level eq 3'>float:left;<else /> clear:both;</if>">
+                            <input id="{$vo.id}" type="checkbox" name="access[]" value="{$vo.id}_{$vo.level}"
+                                   pid="{$vo.pid}" level="{$vo.level}"
+                            <if condition="$vo['access'] eq 1">checked='checked'</if>
+                            />
+                            <if condition="$vo['level'] eq 1"><span style="font-weight: bold">[项目]</span></if>
+                            <if condition="$vo['level'] eq 2"><span style="font-weight: bold">[模块]</span></if>
+                            <!--<label name="name" value="{$vo.id}">{$vo.title}</label>-->
+                            {$vo.title}
+                        </p>
+                    </volist>
+                    <input type="hidden" name="rid" value="{$rid}"/>
+                    <br>
+                    <input type="button" onclick="submitAccess()" value="保存添加"/>
+                </form>
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            $("input").click(function ()
+            {
+                var level = $(this).attr("level");
+                if (level == 1)
+                {
+                    var str = "_";
+                    var inputs = $("input[value*=" + str + "]");
+                    $(this).attr("checked") ? inputs.attr("checked", true) : inputs.removeAttr("checked");
+                }
+                else if (level == 2)
+                {
+                    var id = $(this).attr("id");
+                    var inputs = $("input[pid=" + id + "]");
+                    $(this).attr("checked") ? inputs.attr("checked", true) : inputs.removeAttr("checked");
+                }
+                else if (level == 3)
+                {
+                    if ($(this).attr("checked"))
+                    {
+                        var pid = $(this).attr("pid");
+                        $("input[id=" + pid + "]").attr("checked", true);
+
+                        var ppid = $("input[id=" + pid + "]").attr("pid");
+                        $("input[id=" + ppid + "]").attr("checked", true);
+                    }
+                }
+            });
+        });
+        function submitAccess()
+        {
+            var url = "{:U('Rbac/setAccess')}";
+            var data = $("#forms").serialize();
+
+            var result = commonAjaxSubmit(url, data);
+
+            alert(result.info);
+
+        }
+    </script>
+</block>
+
+

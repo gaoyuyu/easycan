@@ -1,0 +1,99 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+
+                <!-- boostrap 样式-->
+                <form class="form-horizontal col-lg-6" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label ">
+                            <div style="display: inline;font-weight: bold;color: Red;"> *</div>
+                            用户名：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="username"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> *</div>密码：</label>
+                        <div class="col-lg-5">
+                            <input type="password" class="form-control" id="passowrd"/>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">所属用户组：</label>
+                        <div class="col-lg-5">
+                            <select name="role_id" id="role_id" class="form-control">
+                                <volist name="roleList" id="vo">
+                                    <option value="{$vo.id}">{$vo.name}</option>
+                                </volist>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-3">
+                            <button type="button" class="btn btn-primary" onclick="addUserHandle()">保存添加</button>
+                        </div>
+                    </div>
+
+                    <div id="alert" class="alert alert-error">
+                        <strong id="message"></strong>
+                    </div>
+                </form>
+
+
+                <!--<div>用户名：<input type="text" id="username"/></div>-->
+                <!--<div>密码：<input type="password" id="passowrd"/></div>-->
+                <!--<div>-->
+                <!--所属用户组：-->
+                <!--<select name="role_id" id="role_id">-->
+                <!--<volist name="roleList" id="vo">-->
+                <!--<option value="{$vo.id}">{$vo.name}</option>-->
+                <!--</volist>-->
+                <!--</select>-->
+                <!--</div>-->
+                <!--<input type="button" value="保存添加" onclick="addUserHandle()"/>-->
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+        });
+        function addUserHandle()
+        {
+            var username = $("#username").val();
+            var password = $("#passowrd").val();
+            var roleId = $("#role_id").val();
+            var data = {
+                "username": username,
+                "password": password,
+                "role_id": roleId,
+            };
+            var url = "{:U('Rbac/addUserHandle')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/addUser')}";
+            }
+            else
+            {
+                $("#message").text(result.info);
+                $("#alert").show();
+                setTimeout("setAlertHide()",3000);
+            }
+
+        }
+    </script>
+</block>
+
+

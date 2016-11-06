@@ -1,0 +1,42 @@
+[ 2016-10-19T13:00:19+08:00 ] ::1 /easycan/index.php/easycan/index.php/Home/Public/login.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000352s ]
+ERR: 无法加载模块:Easycan
+
+[ 2016-10-19T13:00:33+08:00 ] ::1 /easycan/index.php/easycan/index.php/Home/Public/login.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: 无法加载模块:Easycan
+
+[ 2016-10-19T13:00:52+08:00 ] ::1 /easycan/index.php/easycan/index.php/Home/Public/login.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000466s ]
+ERR: 无法加载模块:Easycan
+
+[ 2016-10-19T13:01:10+08:00 ] ::1 /easycan/index.php/easycan/index.php/Home/Public/login.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000338s ]
+ERR: 无法加载模块:Easycan
+
+[ 2016-10-19T14:51:08+08:00 ] ::1 /easycan/index.php/easycan/index.php/Home/Public/login.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000346s ]
+ERR: 无法加载模块:Easycan
+
+[ 2016-10-19T14:51:11+08:00 ] ::1 /easycan/index.php/easycan/index.php/Home/Public/login.html.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+ERR: 无法加载模块:Easycan
+
+[ 2016-10-19T16:07:58+08:00 ] ::1 /easycan/index.php/Rbac/addRole
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000403s ]
+ERR: 无法加载模块:Rbac
+

@@ -1,0 +1,21 @@
+<!-- 左侧列表-->
+<div class="sidebar-nav">
+    <ul>
+        <volist name="node" id="vo">
+            <li>
+                <a href="#" data-target=".{$vo.title}-menu" class="nav-header" data-toggle="collapse">
+                    <i class="fa fa-fw fa-dashboard"></i> {$vo.title}<i class="fa fa-collapse"></i>
+                </a>
+            </li>
+            <li>
+
+                <ul class="{$vo.title}-menu nav nav-list collapse in">
+                    <volist name="vo['node']" id="sub">
+                    <li><a href="__APP__/Home/{$vo.name}/{$sub.name}"><span class="fa fa-caret-right"></span> {$sub.title}</a></li>
+                        </volist>
+                </ul>
+
+            </li>
+        </volist>
+    </ul>
+</div>

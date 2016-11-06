@@ -1,0 +1,97 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+
+                <!-- boostrap 样式-->
+                <form class="form-horizontal col-lg-6" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label "><div style="display: inline;font-weight: bold;color: Red;"> * </div>角色名称：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="rolename" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">角色描述：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="roleremark" />
+                        </div>
+                    </div>
+                    <div class="form-group" id="status">
+                        <label class="col-lg-3 control-label">是否开启：</label>
+                        <div class="col-lg-5 checkbox">
+                            <label>
+                                <input name="status" type="radio" value="1" checked/>开启
+                                <input name="status" type="radio" value="0"/>关闭
+                            </label>
+                        </div>
+                    </div>
+                    <input type="hidden" value="0" id="pid"/>
+                    <div class="form-group">
+                        <div class="col-lg-offset-3">
+                            <button type="button" class="btn btn-primary" onclick="addRoleHandle()">提交</button>
+                        </div>
+                    </div>
+
+                    <div id="alert" class="alert alert-error">
+                        <strong id="message"></strong>
+                    </div>
+                </form>
+
+
+                <!--<div>角色名称：<input type="text" id="rolename"/></div>-->
+                <!--<div>角色描述：<input type="text" id="roleremark"/></div>-->
+                <!--<div style="font-weight:bolder; " id="status">-->
+                    <!--是否开启：-->
+                    <!--<input name="status" type="radio" value="1" checked/>开启-->
+                    <!--<input name="status" type="radio" value="0"/>关闭-->
+                <!--</div>-->
+                <!--<input type="hidden" value="0" id="pid"/>-->
+                <!--<input type="button" value="提交" onclick="addRoleHandle()"/>-->
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+
+        });
+        function addRoleHandle()
+        {
+            var roleName = $("#rolename").val();
+            var roleRemark = $("#roleremark").val();
+            var status = $('#status input[name="status"]:checked ').val();
+            var pid = $("#pid").val();
+            var data = {
+                "rolename": roleName,
+                "roleremark": roleRemark,
+                "status": status,
+                "pid": pid,
+            };
+            var url = "{:U('Rbac/addRoleHandle')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/addRole')}";
+            }
+            else
+            {
+                $("#message").text(result.info);
+                $("#alert").show();
+                setTimeout("setAlertHide()",3000);
+            }
+
+        }
+    </script>
+</block>
+
+

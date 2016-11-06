@@ -1,0 +1,88 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+
+                <!-- boostrap 样式-->
+                <form class="form-horizontal col-lg-6" role="form">
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> * </div>客户电话：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="phone" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> * </div>客户地址：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="address" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label"><div style="display: inline;font-weight: bold;color: Red;"> * </div>价格：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="price" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">客户备注：</label>
+                        <div class="col-lg-5">
+                            <input type="text" class="form-control" id="remark" />
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-lg-offset-3">
+                            <button type="button" class="btn btn-primary" onclick="addOrderHandle()">提交</button>
+                        </div>
+                    </div>
+                    <div id="alert" class="alert alert-error">
+                        <strong id="message"></strong>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+        });
+        function addOrderHandle()
+        {
+            var phone = $("#phone").val();
+            var address = $("#address").val();
+            var price = $("#price").val();
+            var remark = $("#remark").val();
+            var data = {
+                "phone": phone,
+                "address": address,
+                "price": price,
+                "remark": remark,
+            };
+            var url = "{:U('Order/addOrderHandle')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Order/addOrder')}";
+            }
+            else
+            {
+                $("#message").text(result.info);
+                $("#alert").show();
+                setTimeout("setAlertHide()",3000);
+            }
+
+        }
+    </script>
+</block>
+
+

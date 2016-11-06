@@ -1,0 +1,182 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>
+                            序号
+                        </th>
+                        <th>
+                            角色名称
+                        </th>
+                        <th>
+                            角色描述
+                        </th>
+                        <th>
+                            开启状态
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="roleList" id="vo">
+
+                        <tr>
+                            <td>
+                                {$vo["id"]}
+                            </td>
+                            <td>
+                                {$vo["name"]}
+                            </td>
+                            <td>
+                                {$vo["remark"]}
+                            </td>
+                            <td>
+                                <if condition="$vo['status'] eq 1">开启
+                                    <else/>
+                                    关闭
+                                </if>
+
+                            </td>
+                            <td>
+                                <a href="{:U('Rbac/access',array('rid'=>$vo['id']))}">【配置权限】</a>
+                                <a href="" data-toggle="modal" data-target="#myModal" onclick="setModalData({$vo['id']},'{$vo['name']}','{$vo['remark']}','{$vo['status']}')">【修改】</a>
+                                <a href="" onclick="deleteRole({$vo['id']})">【删除】</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+                <!-- 模态框（Modal） -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    修改角色信息
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal " role="form">
+                                    <div class="form-group">
+                                        <label class=" control-label ">
+                                            <div style="display: inline;font-weight: bold;color: Red;"> *</div>
+                                            角色名称：</label>
+                                        <div class="">
+                                            <input type="text" class="form-control" id="rolename"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class=" control-label">角色描述：</label>
+                                        <div class="">
+                                            <input type="text" class="form-control" id="roleremark"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group" id="status">
+                                        <label class=" control-label">是否开启：</label>
+                                        <div class=" checkbox">
+                                            <label>
+                                                <input name="status" type="radio" value="1" checked/>开启
+                                                <input name="status" type="radio" value="0"/>关闭
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" value="0" id="pid"/>
+                                    <input type="hidden"  id="rid"/>
+                                    <div id="alert" class="alert alert-error">
+                                        <strong id="message"></strong>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="updateRole()">
+                                    提交更改
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+        });
+        
+        function setModalData(id,name,remark,status)
+        {
+            $("#rolename").val(name);
+            $("#roleremark").val(remark);
+            $("#rid").val(id);
+            $("#status input[value="+status+"]").attr("checked","true");
+        }
+        function updateRole()
+        {
+            var rid = $("#rid").val();
+            var roleName = $("#rolename").val();
+            var roleRemark = $("#roleremark").val();
+            var status = $('#status input[name="status"]:checked ').val();
+            var pid = $("#pid").val();
+            var data = {
+                "rid":rid,
+                "rolename": roleName,
+                "roleremark": roleRemark,
+                "status": status,
+                "pid": pid,
+            };
+            var url = "{:U('Rbac/updateRole')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/roleList')}";
+            }
+            else
+            {
+                $("#message").text(result.info);
+                $("#alert").show();
+                setTimeout("setAlertHide()",3000);
+            }
+        }
+        function deleteRole(id)
+        {
+            if(!confirm("确定要删除该角色吗？"))
+            {
+                return false;
+            }
+            var data = {
+                "rid":id,
+            };
+            var url = "{:U('Rbac/deleteRole')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/roleList')}";
+            }
+        }
+    </script>
+</block>
+
+

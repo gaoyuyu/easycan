@@ -1,0 +1,6 @@
+[ 2016-10-17T15:22:35+08:00 ] ::1 /easycan/index.php/Index/index/test.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: 无法加载模块:Index
+

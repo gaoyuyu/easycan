@@ -1,0 +1,185 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>
+                            权限ID
+                        </th>
+                        <th>
+                            权限结构
+                        </th>
+                        <th>
+                            名称
+                        </th>
+                        <th>
+                            排序
+                        </th>
+                        <th>
+                            类型
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="nodeList" id="vo">
+                    <tr>
+                        <td>
+                            {$vo["id"]}
+                        </td>
+                        <td>
+                            <div style="text-indent:{$vo['level']*30}px;">|-&#45;&#45;
+                                {$vo.title}
+                            </div>
+                        </td>
+                        <td>
+                            {$vo["name"]}
+                        </td>
+                        <td>
+                            {$vo["sort"]}
+                        </td>
+                        <td>
+                            <if condition="$vo['level'] eq 1">
+                                <div>项目</div>
+                                <elseif condition="$vo['level'] eq 2"/>
+                                <div style="color: #1773ca">模块</div>
+                                <else/>
+                                <div style="color:forestgreen">操作</div>
+                            </if>
+                        </td>
+                        <td>
+                            <a href="" data-toggle="modal" data-target="#myModal" onclick="setModalData({$vo['id']},'{$vo['title']}','{$vo['name']}','{$vo['sort']}')">【修改】</a>
+                            <a href="" onclick="deleteNode('{$vo.title}',{$vo['id']})">【删除】</a>
+                        </td>
+                    </tr>
+                    </volist>
+                    </tbody>
+                </table>
+
+
+                <!-- 模态框（Modal） -->
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                    &times;
+                                </button>
+                                <h4 class="modal-title" id="myModalLabel">
+                                    修改权限信息
+                                </h4>
+                            </div>
+                            <div class="modal-body">
+                                <form class="form-horizontal " role="form">
+                                    <div class="form-group">
+                                        <label class=" control-label ">
+                                            中文名称：
+                                        </label>
+                                        <div class="">
+                                            <input type="text" class="form-control" id="title"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class=" control-label">英文名称：</label>
+                                        <div class="">
+                                            <input type="text" class="form-control" id="name"/>
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label class=" control-label">排序：</label>
+                                        <div class="">
+                                            <input type="text" class="form-control" id="sort"/>
+                                        </div>
+                                    </div>
+                                    <input type="hidden" id="rid" />
+                                    <div id="alert" class="alert alert-error">
+                                        <strong id="message"></strong>
+                                    </div>
+                                </form>
+
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="updateNode()">
+                                    提交更改
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+        });
+        function setModalData(rid,title,name,sort)
+        {
+            $("#rid").val(rid);
+            $("#title").val(title);
+            $("#name").val(name);
+            $("#sort").val(sort);
+
+        }
+        function updateNode()
+        {
+            var rid = $("#rid").val();
+            var title = $("#title").val();
+            var name = $("#name").val();
+            var sort = $("#sort").val();
+            var data = {
+                "id":rid,
+                "title":title,
+                "name":name,
+                "sort":sort,
+            };
+            var url = "{:U('Rbac/updateNode')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/nodeList')}";
+            }
+            else
+            {
+                $("#message").text(result.info);
+                $("#alert").show();
+                setTimeout("setAlertHide()",3000);
+            }
+        }
+        function deleteNode(title,id)
+        {
+            if(!confirm("确定要删除【"+title+"】权限吗？"))
+            {
+                return false;
+            }
+            var data = {
+                "nid":id,
+            };
+            var url = "{:U('Rbac/deleteNode')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 3)
+            {
+                alert(result.info);
+                window.location.href = "{:U('Rbac/nodeList')}";
+            }
+        }
+    </script>
+</block>
+
+

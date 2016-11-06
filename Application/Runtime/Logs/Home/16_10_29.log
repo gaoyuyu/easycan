@@ -1,0 +1,513 @@
+[ 2016-10-29T21:34:58+08:00 ] 127.0.0.1 /easycan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-10-29T21:35:09+08:00 ] 127.0.0.1 /easycan/index.php/Home/Public/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:35:17+08:00 ] 127.0.0.1 /easycan/index.php/Home/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:35:17+08:00 ] 127.0.0.1 /easycan/index.php/Home/Public/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:35:18+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:36:58+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:37:05+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:37:18+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:38:05+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:38:41+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:41:21+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:43:48+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:43:49+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:44:01+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:00+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:01+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:01+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:02+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:02+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:03+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:05+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:07+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:07+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:07+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:07+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/pageIndex.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:45:33+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:34+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:34+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:34+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:34+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:35+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:35+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:35+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:45:35+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:51:03+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:51:04+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:51:06+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 模板不存在:./Application/Home/View/Order/map.html
+
+[ 2016-10-29T21:51:22+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:52:43+08:00 ] 127.0.0.1 /easycan/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+ERR: 无法加载控制器:Index
+
+[ 2016-10-29T21:53:05+08:00 ] 127.0.0.1 /easycan/index.php/Home/Public/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:53:05+08:00 ] 127.0.0.1 /easycan/index.php/Home/Public/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:53:07+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:53:09+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:53:52+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:55:10+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:55:16+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:55:39+08:00 ] ::1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:55:39+08:00 ] ::1 /easycan/index.php/Home/Public/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:55:43+08:00 ] ::1 /easycan/index.php/Home/Public/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T21:55:43+08:00 ] ::1 /easycan/index.php/Home/Public/main.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:55:45+08:00 ] ::1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T21:55:46+08:00 ] ::1 /easycan/index.php/Home/Order/getRealTimeLocation.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:00:17+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:00:26+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:00:27+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:00:27+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:01:27+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:01:28+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:01:40+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:01:41+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:02:51+08:00 ] 127.0.0.1 /easycan/index.php/Home/Rbac/roleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:03:43+08:00 ] 127.0.0.1 /easycan/index.php/Home/Rbac/roleList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:03:44+08:00 ] 127.0.0.1 /easycan/index.php/Home/Rbac/userList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:03:45+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:04:04+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:04:05+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:04:06+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:13:38+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:13:40+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:14:47+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:14:48+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:14:49+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:15:10+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:16:51+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:16:51+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:16:52+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:17:08+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:17:42+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:19:55+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:20:20+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:21:37+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:21:51+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:22:01+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:22:10+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:22:37+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:23:28+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:23:38+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:24:00+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:26:40+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:34:33+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:34:34+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:34:34+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:34:37+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:35:22+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:35:23+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:35:31+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:38:22+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/5902+Rue+Hamilton%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:39:48+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:39:57+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/6869+Rue+Bealieu%2C+MONTREAL%2C+QC%2C+Canada.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-29T22:40:23+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:40:24+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/orderList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-29T22:40:28+08:00 ] 127.0.0.1 /easycan/index.php/Home/Order/getRealTimeLocation/address/1600+Amphitheatre+Parkway%2C+Mountain+View%2C+CA+94043%2C+USA.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+

@@ -1,0 +1,667 @@
+[ 2016-11-04T10:10:31+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023289s ]
+
+[ 2016-11-04T10:10:49+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000378s ]
+
+[ 2016-11-04T10:10:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-11-04T10:10:55+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000376s ]
+
+[ 2016-11-04T10:17:59+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000455s ]
+
+[ 2016-11-04T10:18:46+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:51+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000634s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000465s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000513s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000391s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000590s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:52+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:53+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000405s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:53+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000412s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:53+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000420s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:53+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:53+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:54+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000415s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:54+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000409s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:54+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:54+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000493s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:54+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000433s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:55+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000421s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:55+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:55+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000394s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:18:55+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000491s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:19:03+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:19:22+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:19:35+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:08+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000047s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:10+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:11+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000369s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:11+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000440s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:11+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000358s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:11+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000359s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:20:12+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:22:30+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000510s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:26:42+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000471s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T10:27:13+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000382s ]
+ERR: 非法操作:index1
+
+[ 2016-11-04T11:10:18+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015261s ]
+
+[ 2016-11-04T11:10:22+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-11-04T11:10:25+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-11-04T11:10:31+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000413s ]
+
+[ 2016-11-04T11:10:31+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000410s ]
+
+[ 2016-11-04T11:10:39+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-11-04T11:10:39+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-11-04T11:11:26+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-11-04T11:22:07+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/index
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000544s ]
+
+[ 2016-11-04T15:17:59+08:00 ] ::1 /easycan/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-11-04T15:18:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=gaoyy&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+
+[ 2016-11-04T15:18:24+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+
+[ 2016-11-04T15:23:20+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-11-04T15:23:24+08:00 ] ::1 /easycan/index.php/Api/User/login?username=1admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000530s ]
+
+[ 2016-11-04T15:29:29+08:00 ] ::1 /easycan/index.php/Api/User/login?username=1admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000384s ]
+
+[ 2016-11-04T15:30:04+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000361s ]
+
+[ 2016-11-04T15:30:07+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+
+[ 2016-11-04T15:32:20+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+
+[ 2016-11-04T15:32:53+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000029s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000387s ]
+
+[ 2016-11-04T15:32:56+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000490s ]
+
+[ 2016-11-04T15:33:00+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000336s ]
+
+[ 2016-11-04T15:33:12+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000377s ]
+
+[ 2016-11-04T15:33:31+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000037s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000504s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:33:54+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000365s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:15+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000427s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000351s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000364s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000375s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000366s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000370s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000399s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000529s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000456s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000371s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000397s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000565s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000398s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000472s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000049s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000728s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000422s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:18+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000368s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:48+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000356s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:40:48+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000380s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:41:12+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000354s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:41:23+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:41:23+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000423s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:42:10+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000395s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:42:10+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000347s ]
+ERR: Think\Model:relation方法不存在！
+
+[ 2016-11-04T15:43:31+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000429s ]
+
+[ 2016-11-04T15:44:49+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000367s ]
+
+[ 2016-11-04T15:44:50+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000363s ]
+
+[ 2016-11-04T15:45:17+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000339s ]
+
+[ 2016-11-04T15:45:33+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+
+[ 2016-11-04T15:45:42+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&passowrd=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+
+[ 2016-11-04T15:45:47+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000379s ]
+
+[ 2016-11-04T15:45:57+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000492s ]
+
+[ 2016-11-04T15:46:37+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000390s ]
+
+[ 2016-11-04T15:52:28+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin1&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000416s ]
+
+[ 2016-11-04T16:41:48+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin1&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015255s ]
+
+[ 2016-11-04T16:41:51+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000402s ]
+
+[ 2016-11-04T16:42:13+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000406s ]
+
+[ 2016-11-04T17:03:33+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.044509s ]
+
+[ 2016-11-04T17:05:19+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000381s ]
+
+[ 2016-11-04T17:05:41+08:00 ] ::1 /easycan/index.php/Api/User/login?username=admin&password=1qa2ws
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000374s ]
+
+[ 2016-11-04T17:07:53+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000401s ]
+
+[ 2016-11-04T17:35:21+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000036s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023300s ]
+
+[ 2016-11-04T17:42:28+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000431s ]
+
+[ 2016-11-04T18:33:36+08:00 ] 192.168.11.117 /easycan/index.php/Api/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000064s ]
+INFO: [ app_init ] --END-- [ RunTime:0.023551s ]
+

@@ -1,0 +1,168 @@
+<!-- 继承模板 -->
+<extend name="Common:base"/>
+
+
+<!-- 右侧功能展示 -->
+<block name="content">
+    <div class="content">
+        <div class="main-content">
+            <div class="page-content">
+
+                <table class="table table-hover table-bordered">
+                    <thead>
+                    <tr>
+                        <th>
+                            订单ID
+                        </th>
+                        <th>
+                            调度员
+                        </th>
+                        <th>
+                            接收员
+                        </th>
+                        <th>
+                            客户电话
+                        </th>
+                        <th>
+                            客户地址
+                        </th>
+                        <th>
+                            价格
+                        </th>
+                        <th>
+                            客户留言
+                        </th>
+                        <th>
+                            订单状态
+                        </th>
+                        <th>
+                            操作
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <volist name="orderList" id="vo">
+                        <tr>
+                            <td>
+                                {$vo["id"]}
+                            </td>
+                            <td>
+                                {$vo["dispatcher"]}
+                            </td>
+                            <td>
+                                <if condition="$vo['receiver'] == ''">
+                                    <span style="color: Red">暂无</span>
+                                    <else/>
+                                    {$vo["receiver"]}
+                                </if>
+                            </td>
+                            <td>
+                                {$vo["customer_phone"]}
+                            </td>
+                            <td>
+                                {$vo["customer_address"]}
+                            </td>
+                            <td>
+                                {$vo["price"]}
+                            </td>
+                            <td>
+                                {$vo["remark"]}
+                            </td>
+                            <td>
+                                <if condition="$vo['value'] eq 0">
+                                    <span style="color:#d58512 ">等待</span>
+                                </if>
+                                <if condition="$vo['value'] eq 1">
+                                    <span style="color: #1155CC">接受</span>
+                                </if>
+                                <if condition="$vo['value'] eq 2">
+                                    <span style="color: #269abc ">派送</span>
+                                </if>
+                                <if condition="$vo['value'] eq 3">
+                                    <span style="color: #4cae4c">完成</span>
+                                </if>
+                            </td>
+                            <td>
+                                <a href="{:U('Order/getRealTimeLocation',array('address'=>$vo['customer_address']))}">实时位置</a>
+                            </td>
+                        </tr>
+                    </volist>
+                    </tbody>
+                </table>
+
+                <div>{$pageIndex}</div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $(function ()
+        {
+            setAlertHide();
+
+            //高亮当前选中li
+            $(".pagination li").click(function ()
+            {
+                var currentIndex = $(".pagination li[class='active']").find("a").html();
+                if ($(this).find("a").attr("id") == "left")
+                {
+                    //左箭头分页
+                    if (parseInt(currentIndex) - 1 == 0)
+                    {
+                        alert("当前已经是第一页");
+                        return false;
+                    }
+                    else
+                    {
+                        var index = parseInt(currentIndex) - 1;
+                        $(".pagination li[class='active']").removeAttr("class");
+                        pageIndex(index);
+                        $(".pagination li a:contains(" + index + ")").parent().addClass("active");
+                    }
+                }
+                else if ($(this).find("a").attr("id") == "right")
+                {
+                    //右箭头分页
+                    if (parseInt(currentIndex) + 1 > ($(".pagination li").length - 2))
+                    {
+                        alert("当前已经是最后页");
+                        return false;
+                    }
+                    else
+                    {
+                        var index = parseInt(currentIndex) + 1;
+                        $(".pagination li[class='active']").removeAttr("class");
+                        pageIndex(index);
+                        $(".pagination li a:contains(" + index + ")").parent().addClass("active");
+                    }
+                }
+                else
+                {
+                    $(".pagination li[class='active']").removeAttr("class");
+                    $(this).addClass("active");
+                }
+            });
+
+
+        });
+        function pageIndex(index)
+        {
+            var data = {
+                "index": index,
+            };
+            var url = "{:U('Order/pageIndex')}";
+            var result = commonAjaxSubmit(url, data);
+            if (result.code != 0)
+            {
+                $("tbody").html(result.orderhtml)
+            }
+            else
+            {
+                alert(result.info);
+            }
+        }
+
+
+    </script>
+</block>
+
+
