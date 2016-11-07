@@ -57,10 +57,14 @@ class OrderController extends AppController
 
     public function orderList()
     {
+//        $currentPage = $_GET["currentPage"];
         $currentPage = $_POST["currentPage"];
         $om = M("order");
         $count = $om->count();
-        $orderList = $om->page($currentPage,self::perPage)->select();
+        $orderList = $om->page($currentPage,self::perPage)->order("id desc")->select();
+//        dump($orderList);
+//        exit(0);
+
         foreach ($orderList as $key => $value)
         {
             if (!empty($value["dispatcher"]))
