@@ -21,11 +21,11 @@ class OrderController extends AppController
         $address = trim($_POST["address"]);
         $price = trim($_POST["price"]);
         $remark = trim($_POST["remark"]);
-//        $uid = trim($_POST["uid"]);
-//        $phone = trim($_POST["phone"]);
-//        $address = trim($_POST["address"]);
-//        $price = trim($_POST["price"]);
-//        $remark = trim($_POST["remark"]);
+        //        $uid = trim($_POST["uid"]);
+        //        $phone = trim($_POST["phone"]);
+        //        $address = trim($_POST["address"]);
+        //        $price = trim($_POST["price"]);
+        //        $remark = trim($_POST["remark"]);
 
         if (empty($phone) || empty($address) || empty($price))
         {
@@ -38,7 +38,7 @@ class OrderController extends AppController
             "customer_address" => $address,
             "price" => $price,
             "remark" => $remark,
-            "create_time"=>date("Y-m-d H:i:s", time()),
+            "create_time" => date("Y-m-d H:i:s", time()),
         );
         $om = M("order");
         $om->startTrans();
@@ -47,8 +47,7 @@ class OrderController extends AppController
         {
             $om->rollback();
             $this->returnResponseError("提交失败");
-        }
-        else
+        } else
         {
             $om->commit();
             $this->returnResponseOK("提交成功");
@@ -57,13 +56,13 @@ class OrderController extends AppController
 
     public function orderList()
     {
-//        $currentPage = $_GET["currentPage"];
+        //        $currentPage = $_GET["currentPage"];
         $currentPage = $_POST["currentPage"];
         $om = M("order");
         $count = $om->count();
-        $orderList = $om->page($currentPage,self::perPage)->order("id desc")->select();
-//        dump($orderList);
-//        exit(0);
+        $orderList = $om->page($currentPage, self::perPage)->order("id desc")->select();
+        //        dump($orderList);
+        //        exit(0);
 
         foreach ($orderList as $key => $value)
         {
@@ -77,29 +76,60 @@ class OrderController extends AppController
             }
         }
         $data = array(
-            "count"=>$count,
-            "prePage"=>self::perPage,
-            "pageCount"=>$this->getPageCount($count,self::perPage),
-            "currentPage"=>$currentPage,
-            "list"=>$orderList,
+            "count" => $count,
+            "prePage" => self::perPage,
+            "pageCount" => $this->getPageCount($count, self::perPage),
+            "currentPage" => $currentPage,
+            "list" => $orderList,
         );
 
         $this->returnResponseOK($data);
     }
 
 
-    public function getPageCount($count,$perPage)
+    public function getPageCount($count, $perPage)
     {
         $pageCount = -1;
-        if($count%$perPage == 0)
+        if ($count % $perPage == 0)
         {
-            $pageCount = $count/$perPage;
-        }
-        else
+            $pageCount = $count / $perPage;
+        } else
         {
-            $pageCount = (int)($count/$perPage+1);
+            $pageCount = (int)($count / $perPage + 1);
         }
         return $pageCount;
+    }
+
+    public function receiveOrder()
+    {
+        $orderId = $_GET["oid"];
+        $receiver = $_GET["uid"];
+
+        if (empty($orderId) || empty($receiver))
+        {
+            $this->returnResponseError("请检查提交信息是否为空！");
+        }
+
+
+        $om = M("order");
+        $om->startTrans();
+
+        $data = array(
+            "receiver" => $receiver,
+            "status" => 1
+        );
+
+        $om->where("id = {$orderId}")->save($data);
+
+        if ($om->getDbError())
+        {
+            $om->rollback();
+            $this->returnResponseError("接单失败");
+        } else
+        {
+            $om->commit();
+            $this->returnResponseOK("接单成功");
+        }
     }
 
 
