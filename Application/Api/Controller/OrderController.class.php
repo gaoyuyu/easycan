@@ -57,12 +57,20 @@ class OrderController extends AppController
     public function orderList()
     {
         //        $currentPage = $_GET["currentPage"];
+        //        $uid = $_GET["uid"];
+        $uid = $_POST["uid"];
         $currentPage = $_POST["currentPage"];
+
+        if ($uid != null)
+        {
+            $where["receiver"] = $uid;
+        }
+
         $om = M("order");
         $count = $om->count();
-        $orderList = $om->page($currentPage, self::perPage)->order("id desc")->select();
-        //        dump($orderList);
-        //        exit(0);
+        $orderList = $om->page($currentPage, self::perPage)->where($where)->order("id desc")->select();
+        //                dump($orderList);
+        //                exit(0);
 
         foreach ($orderList as $key => $value)
         {
@@ -102,8 +110,10 @@ class OrderController extends AppController
 
     public function receiveOrder()
     {
-        $orderId = $_GET["oid"];
-        $receiver = $_GET["uid"];
+        $orderId = trim($_POST["oid"]);
+        $receiver = trim($_POST["uid"]);
+        //        $orderId = $_GET["oid"];
+        //        $receiver = $_GET["uid"];
 
         if (empty($orderId) || empty($receiver))
         {
@@ -113,6 +123,12 @@ class OrderController extends AppController
 
         $om = M("order");
         $om->startTrans();
+
+        $hasReceived = $om->where("receiver = {$receiver} and status =1")->count();
+        if ($hasReceived != 0)
+        {
+            $this->returnResponseError("当前有正在派送的订单，请完成订单后再接单");
+        }
 
         $data = array(
             "receiver" => $receiver,
