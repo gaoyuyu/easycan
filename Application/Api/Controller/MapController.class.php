@@ -20,39 +20,22 @@ class MapController extends AppController
     public function getLatAndLngByAddress($address)
     {
 //        header("Content-type: text/html; charset=utf-8");
-        $address = $this->handleStringForApi($address);
-        $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&address={$address}&key=" . C("GOOGLE_MAPS_API_KEYS");
-        $json = file_get_contents($url);
-        $output = json_decode($json);
-        $lat = $output->results[0]->geometry->location->lat;
-        $lng = $output->results[0]->geometry->location->lng;
-        $formattedAddress = $output->results[0]->formatted_address;
-        $location = array("lat" => $lat, "lng" => $lng);
-        $data = array(
-            "formatted_address" => $formattedAddress,
-            "location" => $location
-        );
+        $data = $this->getLatLng($address);
         return $data;
     }
     public function getLatAndLngByAddressV2()
     {
-        header("Content-type: text/html; charset=utf-8");
-        $address = trim($_GET["address"]);
-
-        dump($address);
-        $address = $this->handleStringForApi($address);
-        $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&address={$address}&key=" . C("GOOGLE_MAPS_API_KEYS");
-        $json = file_get_contents($url);
-        $output = json_decode($json);
-        $lat = $output->results[0]->geometry->location->lat;
-        $lng = $output->results[0]->geometry->location->lng;
-        $formattedAddress = $output->results[0]->formatted_address;
-        $location = array("lat" => $lat, "lng" => $lng);
+//        $restaurant = trim($_GET["restaurant"]);
+//        $customer = trim($_GET["customer"]);
+        $restaurant = trim($_POST["restaurant"]);
+        $customer = trim($_POST["customer"]);
+        $restaurantLatLng = $this->getLatLng($restaurant);
+        $customerLatLng = $this->getLatLng($customer);
         $data = array(
-            "formatted_address" => $formattedAddress,
-            "location" => $location
+            "restaurant_latlng"=>$restaurantLatLng,
+            "customer_latlng"=>$customerLatLng,
         );
-        dump($data);
+        $this->returnResponseOK($data);
     }
 
     /**
@@ -131,14 +114,10 @@ class MapController extends AppController
 
     public function getDirectionPolylineV2()
     {
-        header("Content-type: text/html; charset=utf-8");
-
-        $orign = trim($_GET["orign"]);
-        $destination = trim($_GET["destination"]);
-
-        dump($orign);
-        dump($destination);
-
+        $orign = trim($_POST["origin"]);
+        $destination = trim($_POST["destination"]);
+//        $orign = trim($_GET["orign"]);
+//        $destination = trim($_GET["destination"]);
 
         $orign = $this->handleStringForApi($orign);
         $destination = $this->handleStringForApi($destination);
@@ -149,7 +128,7 @@ class MapController extends AppController
         $output = json_decode($json);
 
         $points = $output->routes[0]->overview_polyline->points;
-        dump($points);
+        $this->returnResponseOK($points);
     }
 
 
@@ -169,17 +148,38 @@ class MapController extends AppController
     }
     public function reverseGeocodingForLatLngV2()
     {
-        header("Content-type: text/html; charset=utf-8");
-
-        $lat = trim($_GET["lat"]);
-        $lng = trim($_GET["lng"]);
+        $lat = trim($_POST["lat"]);
+        $lng = trim($_POST["lng"]);
+//        $lat = trim($_GET["lat"]);
+//        $lng = trim($_GET["lng"]);
         $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&latlng={$lat},{$lng}&key=" . C("GOOGLE_MAPS_API_KEYS");
 
         $json = file_get_contents($url);
         $output = json_decode($json);
 
         $formattedAddress = $output->results[0]->formatted_address;
-        dump($formattedAddress);
+        $this->returnResponseOK($formattedAddress);
+    }
+
+    /**
+     * @param $address
+     * @return array
+     */
+    public function getLatLng($address)
+    {
+        $address = $this->handleStringForApi($address);
+        $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&address={$address}&key=" . C("GOOGLE_MAPS_API_KEYS");
+        $json = file_get_contents($url);
+        $output = json_decode($json);
+        $lat = $output->results[0]->geometry->location->lat;
+        $lng = $output->results[0]->geometry->location->lng;
+        $formattedAddress = $output->results[0]->formatted_address;
+        $location = array("lat" => $lat, "lng" => $lng);
+        $data = array(
+            "formatted_address" => $formattedAddress,
+            "location" => $location
+        );
+        return $data;
     }
 
 }
