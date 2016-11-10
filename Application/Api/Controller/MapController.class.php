@@ -20,7 +20,6 @@ class MapController extends AppController
     public function getLatAndLngByAddress($address)
     {
 //        header("Content-type: text/html; charset=utf-8");
-//        $address = $prepAddr = str_replace(' ', '+', $_GET["address"]);
         $address = $this->handleStringForApi($address);
         $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&address={$address}&key=" . C("GOOGLE_MAPS_API_KEYS");
         $json = file_get_contents($url);
@@ -35,6 +34,26 @@ class MapController extends AppController
         );
         return $data;
     }
+    public function getLatAndLngByAddressV2()
+    {
+        header("Content-type: text/html; charset=utf-8");
+        $address = trim($_GET["address"]);
+
+        dump($address);
+        $address = $this->handleStringForApi($address);
+        $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&address={$address}&key=" . C("GOOGLE_MAPS_API_KEYS");
+        $json = file_get_contents($url);
+        $output = json_decode($json);
+        $lat = $output->results[0]->geometry->location->lat;
+        $lng = $output->results[0]->geometry->location->lng;
+        $formattedAddress = $output->results[0]->formatted_address;
+        $location = array("lat" => $lat, "lng" => $lng);
+        $data = array(
+            "formatted_address" => $formattedAddress,
+            "location" => $location
+        );
+        dump($data);
+    }
 
     /**
      * 此API返回的实时位置包含饭店位置A，客户位置B，司机当前位置C由Android客户端获取
@@ -43,16 +62,18 @@ class MapController extends AppController
      */
     public function get2LocationAndDirection()
     {
-        $restaurant = trim($_POST["restaurant"]);
-        $customer = trim($_POST["customer"]);
-
-        $localLat = trim($_POST["lat"]);//23.1306821
-        $localLng = trim($_POST["lng"]);//113.3980644
-//        $restaurant = trim($_GET["restaurant"]);
-//        $customer = trim($_GET["customer"]);
+//        $restaurant = trim($_POST["restaurant"]);
+//        $customer = trim($_POST["customer"]);
 //
-//        $localLat = trim($_GET["lat"]);//23.1306821
-//        $localLng = trim($_GET["lng"]);//113.3980644
+//        $localLat = trim($_POST["lat"]);//23.1306821
+//        $localLng = trim($_POST["lng"]);//113.3980644
+        $restaurant = trim($_GET["restaurant"]);
+        $customer = trim($_GET["customer"]);
+
+        $localLat = trim($_GET["lat"]);//23.1306821
+        $localLng = trim($_GET["lng"]);//113.3980644
+
+
 //        $localLat = 23.1306821;//113.3980644
 //        $localLng = 113.3980644;//113.3980644
 
@@ -81,11 +102,6 @@ class MapController extends AppController
         );
 
         $this->returnResponseOK($data);
-
-
-
-
-
     }
 
 
@@ -113,6 +129,29 @@ class MapController extends AppController
         return $points;
     }
 
+    public function getDirectionPolylineV2()
+    {
+        header("Content-type: text/html; charset=utf-8");
+
+        $orign = trim($_GET["orign"]);
+        $destination = trim($_GET["destination"]);
+
+        dump($orign);
+        dump($destination);
+
+
+        $orign = $this->handleStringForApi($orign);
+        $destination = $this->handleStringForApi($destination);
+
+        $url = "https://maps.googleapis.com/maps/api/directions/json?language=zh-CN&origin={$orign}&destination={$destination}&key=" . C("GOOGLE_MAPS_API_KEYS");
+
+        $json = file_get_contents($url);
+        $output = json_decode($json);
+
+        $points = $output->routes[0]->overview_polyline->points;
+        dump($points);
+    }
+
 
     /**
      * 反向地理编码
@@ -127,7 +166,20 @@ class MapController extends AppController
 
         $formattedAddress = $output->results[0]->formatted_address;
         return $formattedAddress;
+    }
+    public function reverseGeocodingForLatLngV2()
+    {
+        header("Content-type: text/html; charset=utf-8");
 
+        $lat = trim($_GET["lat"]);
+        $lng = trim($_GET["lng"]);
+        $url = "https://maps.googleapis.com/maps/api/geocode/json?language=zh-CN&latlng={$lat},{$lng}&key=" . C("GOOGLE_MAPS_API_KEYS");
+
+        $json = file_get_contents($url);
+        $output = json_decode($json);
+
+        $formattedAddress = $output->results[0]->formatted_address;
+        dump($formattedAddress);
     }
 
 }
