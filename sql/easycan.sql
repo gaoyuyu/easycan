@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50617
 File Encoding         : 65001
 
-Date: 2016-11-06 23:39:14
+Date: 2016-11-18 17:07:09
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -261,71 +261,21 @@ CREATE TABLE `can_order` (
   `customer_address` varchar(255) DEFAULT NULL COMMENT '客户地址',
   `price` varchar(255) DEFAULT NULL COMMENT '订单价格',
   `remark` varchar(255) DEFAULT NULL,
-  `status` int(11) DEFAULT '0' COMMENT '订单状态，0-等待，1-接受，2-派送中，3-完成',
+  `status` int(11) DEFAULT '0' COMMENT '订单状态，0-等待，1-派送中，2-完成',
   `create_time` varchar(255) DEFAULT NULL COMMENT '创建时间',
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=58 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=73 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of can_order
 -- ----------------------------
-INSERT INTO `can_order` VALUES ('1', '10', '11', '13802724236', '5902 Rue Hamilton, MONTREAL, QC, Canada', '66', 'order1', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('2', '10', null, '13802724236', '1600 Amphitheatre Parkway, Mountain View, CA 94043, USA', '77', 'order2', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('3', '10', null, '18822664456', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('4', '10', null, '18822664457', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('5', '10', null, '18822664458', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('6', '10', null, '18822664459', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('7', '10', null, '18822664460', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('8', '10', null, '18822664461', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('9', '10', null, '18822664462', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('10', '10', null, '18822664463', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('11', '10', null, '18822664464', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('12', '10', null, '18822664465', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('13', '10', null, '18822664466', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('14', '10', null, '18822664467', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('15', '10', null, '18822664468', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('16', '10', null, '18822664469', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('17', '10', null, '18822664470', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('18', '10', null, '18822664471', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('19', '10', null, '18822664472', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('20', '10', null, '18822664473', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('21', '10', null, '18822664474', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('22', '10', null, '18822664475', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('23', '10', null, '18822664476', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('24', '10', null, '18822664477', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('25', '10', null, '18822664478', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('26', '10', null, '18822664479', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('27', '10', null, '18822664480', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('28', '10', null, '18822664481', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('29', '10', null, '18822664482', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('30', '10', null, '18822664483', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('31', '10', null, '18822664484', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('32', '10', null, '18822664485', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('33', '10', null, '18822664486', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('34', '10', null, '18822664487', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('35', '10', null, '18822664488', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('36', '10', null, '18822664489', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('37', '10', null, '18822664490', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('38', '10', null, '18822664491', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('39', '10', null, '18822664492', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('40', '10', null, '18822664493', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('41', '10', null, '18822664494', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('42', '10', null, '18822664495', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('43', '10', null, '18822664496', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('44', '10', null, '18822664497', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('45', '10', null, '18822664498', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('46', '10', null, '18822664499', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('47', '10', null, '18822664500', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('48', '10', null, '18822664501', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('49', '10', null, '18822664502', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('50', '10', null, '18822664503', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('51', '10', null, '18822664504', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('52', '10', null, '18822664505', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('53', '10', null, '18822664505', '5902 Rue Hamilton, MONTREAL, QC, Canada', '45', 'page', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('54', '10', null, '123', 'USA', '12', 'oppo', '0', '2016-11-06 11:57:32');
-INSERT INTO `can_order` VALUES ('55', '0', null, '', '', '', '', '0', '2016-11-06 12:53:37');
-INSERT INTO `can_order` VALUES ('56', '0', null, '', '', '', '', '0', '2016-11-06 12:53:51');
-INSERT INTO `can_order` VALUES ('57', '10', null, '13802724236', 'US', '45', 'Fast', '0', '2016-11-06 12:55:07');
+INSERT INTO `can_order` VALUES ('66', '10', null, '13802724236', 'USA', '22', 'none', '0', '2016-11-09 17:42:02');
+INSERT INTO `can_order` VALUES ('67', '10', null, '15662354236', 'French', '123', 'none', '0', '2016-11-09 17:42:20');
+INSERT INTO `can_order` VALUES ('68', '10', null, '17866669898', 'Korea', '75', 'none', '0', '2016-11-09 17:42:42');
+INSERT INTO `can_order` VALUES ('69', '10', null, '15662224236', 'HSA', '78', 'none', '0', '2016-11-09 18:47:43');
+INSERT INTO `can_order` VALUES ('70', '10', null, '13802724236', 'Oct', '55', 'none', '0', '2016-11-09 18:47:58');
+INSERT INTO `can_order` VALUES ('71', '10', null, '14233335656', 'French', '45', 'none', '0', '2016-11-09 18:52:36');
+INSERT INTO `can_order` VALUES ('72', '10', '11', '12344446666', 'Ivy', '45', 'none', '1', '2016-11-09 18:52:54');
 
 -- ----------------------------
 -- Table structure for `can_order_location`

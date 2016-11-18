@@ -148,5 +148,32 @@ class OrderController extends AppController
         }
     }
 
+    public function finishOrder()
+    {
+        $orderId = trim($_POST["oid"]);
+//        $orderId = trim($_GET["oid"]);
+        if (empty($orderId))
+        {
+            $this->returnResponseError("请检查提交信息是否为空！");
+        }
+
+        $om = M("order");
+        $om->startTrans();
+
+        $om->where("id = {$orderId}")->setField("status", 2);
+
+        if ($om->getDbError())
+        {
+            $om->rollback();
+            $this->returnResponseError("未能成功，请重试");
+        } else
+        {
+            $om->commit();
+            $this->returnResponseOK("收货成功");
+        }
+
+
+    }
+
 
 }
