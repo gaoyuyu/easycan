@@ -23,6 +23,7 @@ class MapController extends AppController
         $data = $this->getLatLng($address);
         return $data;
     }
+
     public function getLatAndLngByAddressV2()
     {
 //        $restaurant = trim($_GET["restaurant"]);
@@ -32,8 +33,8 @@ class MapController extends AppController
         $restaurantLatLng = $this->getLatLng($restaurant);
         $customerLatLng = $this->getLatLng($customer);
         $data = array(
-            "restaurant_latlng"=>$restaurantLatLng,
-            "customer_latlng"=>$customerLatLng,
+            "restaurant_latlng" => $restaurantLatLng,
+            "customer_latlng" => $customerLatLng,
         );
         $this->returnResponseOK($data);
     }
@@ -79,7 +80,7 @@ class MapController extends AppController
         $data = array(
             "restaurant" => $rl,
             "customer" => $cl,
-            "local"=>$local,
+            "local" => $local,
             "restaurant_customer" => $restaurant_customer,
             "local_restaurant" => $local_restaurant,
         );
@@ -146,6 +147,7 @@ class MapController extends AppController
         $formattedAddress = $output->results[0]->formatted_address;
         return $formattedAddress;
     }
+
     public function reverseGeocodingForLatLngV2()
     {
         $lat = trim($_POST["lat"]);
@@ -180,6 +182,66 @@ class MapController extends AppController
             "location" => $location
         );
         return $data;
+    }
+
+
+    public function uploadLocation()
+    {
+        $orderId = trim($_POST["oid"]);
+        $lat = trim($_POST["lat"]);
+        $lng = trim($_POST["lng"]);
+        $om = M("order_location");
+        $om->startTrans();
+        $data = array(
+            "order_id" => $orderId,
+            "longitude" => $lng,
+            "latitude" => $lat,
+            "upload_time" => date("Y-m-d H:i:s", time()),
+        );
+        if ($om->where("order_id = $orderId")->count() != 0)
+        {
+            $om->where("order_id = $orderId")->save($data);
+        }
+        else
+        {
+            $om->add($data);
+        }
+
+        if ($om->getDbError())
+        {
+            $om->rollback();
+            $this->returnResponseError("上传失败");
+        }
+        else
+        {
+            $om->commit();
+            $this->returnResponseOK("上传成功");
+        }
+    }
+
+
+    public function getDriverLocationByOrderId()
+    {
+//        $orderId = trim($_GET["oid"]);
+        $orderId = trim($_POST["oid"]);
+        $om = M("order_location");
+
+        $location = $om->where("order_id = {$orderId}")->find();
+
+        if ($location == null)
+        {
+            $om->rollback();
+            $this->returnResponseError("该订单暂无法获取司机位置");
+        }
+        else
+        {
+            $om->commit();
+            $this->returnResponseOK($location);
+        }
+
+
+
+
     }
 
 }

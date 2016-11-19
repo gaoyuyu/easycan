@@ -160,6 +160,9 @@ class OrderController extends AppController
         $om = M("order");
         $om->startTrans();
 
+        
+        
+        
         $om->where("id = {$orderId}")->setField("status", 2);
 
         if ($om->getDbError())
