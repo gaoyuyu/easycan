@@ -59,11 +59,35 @@ class OrderController extends AppController
         //        $currentPage = $_GET["currentPage"];
         //        $uid = $_GET["uid"];
         $uid = $_POST["uid"];
+        $orderStatus = $_POST["orderStatus"];
         $currentPage = $_POST["currentPage"];
+
+
+        $phone = trim($_POST["phone"]);
+        $address = trim($_POST["address"]);
+        $remark = trim($_POST["remark"]);
 
         if ($uid != null)
         {
             $where["receiver"] = $uid;
+        }
+
+        if (!($orderStatus < 0))
+        {
+            $where["status"] = $orderStatus;
+        }
+
+        if ($phone != null)
+        {
+            $where["customer_phone"] = array("like", "%{$phone}%");
+        }
+        if ($address != null)
+        {
+            $where["customer_address"] = array("like", "%{$address}%");
+        }
+        if ($remark != null)
+        {
+            $where["remark"] = array("like", "%{$remark}%");
         }
 
         $om = M("order");
@@ -151,7 +175,7 @@ class OrderController extends AppController
     public function finishOrder()
     {
         $orderId = trim($_POST["oid"]);
-//        $orderId = trim($_GET["oid"]);
+        //        $orderId = trim($_GET["oid"]);
         if (empty($orderId))
         {
             $this->returnResponseError("请检查提交信息是否为空！");
@@ -160,9 +184,7 @@ class OrderController extends AppController
         $om = M("order");
         $om->startTrans();
 
-        
-        
-        
+
         $om->where("id = {$orderId}")->setField("status", 2);
 
         if ($om->getDbError())
