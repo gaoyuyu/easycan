@@ -200,5 +200,14 @@ class OrderController extends AppController
 
     }
 
+    /**
+     * 获取订单数
+     */
+    public function getOrderCount()
+    {
+        $om = M("order");
+        $count = $om->count();
+        $this->returnResponseOK($count);
+    }
 
 }

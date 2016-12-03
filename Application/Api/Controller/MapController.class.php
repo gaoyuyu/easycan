@@ -24,6 +24,17 @@ class MapController extends AppController
         return $data;
     }
 
+    /**
+     * @return array
+     */
+    public function getLatAndLngByAddressManually()
+    {
+//        header("Content-type: text/html; charset=utf-8");
+        $address = trim($_POST["address"]);
+        $data = $this->getLatLng($address);
+        $this->returnResponseOK($data);
+    }
+
     public function getLatAndLngByAddressV2()
     {
 //        $restaurant = trim($_GET["restaurant"]);
@@ -238,8 +249,6 @@ class MapController extends AppController
             $om->commit();
             $this->returnResponseOK($location);
         }
-
-
 
 
     }
