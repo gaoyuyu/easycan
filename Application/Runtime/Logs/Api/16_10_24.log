@@ -1,5 +1,0 @@
-[ 2016-10-24T23:41:56+08:00 ] 127.0.0.1 /easycan/index.php/Api/User/index
-INFO: [ app_init ] --START--
-INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
-INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
-

@@ -50,7 +50,7 @@ class OrderController extends CommonController
             "customer_address" => $address,
             "price" => $price,
             "remark" => $remark,
-            "create_time"=>date("Y-m-d H:i:s", time()),
+            "create_time" => date("Y-m-d H:i:s", time()),
         );
         $om->add($data);
         if ($om->getDbError())
@@ -237,8 +237,21 @@ html;
     public function getRealTimeLocation()
     {
         $address = $_GET["address"];
+        $orderId = $_GET["oid"];
         $location = $this->getLatAndLng($address);
-        $this->assign("location", $location);
+
+        $restaurantLocation = $this->getLatAndLng("广州世界大观");
+        $customerLocation = $this->getLatAndLng("广州奥林匹克网球中心");
+
+        $ol = M("order_location");
+        $driver = $ol->where("order_id = {$orderId}")->field("longitude,latitude")->find();
+
+        $driverLocation["lat"] = floatval($driver["latitude"]);
+        $driverLocation["lng"] = floatval($driver["longitude"]);
+
+        $this->assign("restaurantLocation", $restaurantLocation);
+        $this->assign("customerLocation", $customerLocation);
+        $this->assign("driverLocation", $driverLocation);
         $this->display("location");
 
     }

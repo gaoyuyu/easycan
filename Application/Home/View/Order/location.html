@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Travel modes in directions</title>
+    <title>Simple markers</title>
     <style>
         html, body {
             height: 100%;
@@ -14,66 +14,97 @@
         #map {
             height: 100%;
         }
-
-        #floating-panel {
-            position: absolute;
-            top: 10px;
-            left: 25%;
-            z-index: 5;
-            background-color: #fff;
-            padding: 5px;
-            border: 1px solid #999;
-            text-align: center;
-            font-family: 'Roboto', 'sans-serif';
-            line-height: 30px;
-            padding-left: 10px;
-        }
-
     </style>
 </head>
 <body>
-<div id="floating-panel">
-    <b>Mode of Travel: </b>
-    <select id="mode">
-        <option value="DRIVING">Driving</option>
-        <option value="WALKING">Walking</option>
-        <option value="BICYCLING">Bicycling</option>
-        <option value="TRANSIT">Transit</option>
-    </select>
-</div>
 <div id="map"></div>
 <script>
     function initMap()
     {
         var directionsDisplay = new google.maps.DirectionsRenderer;
         var directionsService = new google.maps.DirectionsService;
+        var restaurantLocation = new Array();
+        restaurantLocation[0] = {$restaurantLocation['lat']};
+        restaurantLocation[1] = {$restaurantLocation['lng']};
+        var restaurantLatLng = {lat: restaurantLocation[0], lng: restaurantLocation[1]};
+
+        var customerLocation = new Array();
+        customerLocation[0] = {$customerLocation['lat']};
+        customerLocation[1] = {$customerLocation['lng']};
+        var customerLatLng = {lat: customerLocation[0], lng: customerLocation[1]};
+
+        var driverLocation = new Array();
+        driverLocation[0] = {$driverLocation['lat']};
+        driverLocation[1] = {$driverLocation['lng']};
+        var driverLatLng = {lat: driverLocation[0], lng: driverLocation[1]};
+
         var map = new google.maps.Map(document.getElementById('map'), {
             zoom: 14,
+            center: driverLatLng
         });
         directionsDisplay.setMap(map);
+        setMarker(restaurantLatLng, map, "饭店", "__PUBLIC__/map/ic_restaurant_location.png");
+        setMarker(customerLatLng, map, "客人", "__PUBLIC__/map/ic_customer_location.png");
+        setMarker(driverLatLng, map, "I am Here", "__PUBLIC__/map/ic_driver_location.png");
 
-        calculateAndDisplayRoute(directionsService, directionsDisplay);
-        document.getElementById('mode').addEventListener('change', function ()
+        calculateAndDisplayRoute(map, directionsService, directionsDisplay,
+                driverLocation, restaurantLocation, "#303F9F", 0.5, 6);
+        calculateAndDisplayRoute(map, directionsService, directionsDisplay,
+                restaurantLocation, customerLocation, "#009688", 1.0, 4);
+
+
+    }
+
+    /**
+     * 设置地图标记
+     * @param latLng
+     * @param map
+     * @param title
+     */
+    function setMarker(latLng, map, title, image)
+    {
+        var infowindow = new google.maps.InfoWindow({
+            content: title
+        });
+        var marker = new google.maps.Marker({
+            position: latLng,
+            map: map,
+            animation: google.maps.Animation.DROP,
+            icon: image
+        });
+        infowindow.open(map, marker);
+        marker.addListener('click', function ()
         {
-            calculateAndDisplayRoute(directionsService, directionsDisplay);
+            infowindow.open(map, marker);
         });
     }
 
-    function calculateAndDisplayRoute(directionsService, directionsDisplay)
+    /**
+     * 获取路线数据
+     * @param map
+     * @param directionsService
+     * @param directionsDisplay
+     * @param origin
+     * @param destination
+     * @param color
+     * @param opacity
+     * @param weight
+     */
+    function calculateAndDisplayRoute(map, directionsService, directionsDisplay,
+                                      origin, destination, color, opacity, weight)
     {
-        var selectedMode = document.getElementById('mode').value;
         directionsService.route({
-            origin: {lat: {$location['lat']}, lng: {$location['lng']}},  // Haight.
-            destination: {lat: 45.4500606, lng: -73.59396},  // Ocean Beach.
+            origin: {lat: origin[0], lng: origin[1]},
+            destination: {lat: destination[0], lng: destination[1]},
             // Note that Javascript allows us to access the constant
             // using square brackets and a string value as its
             // "property."
-            travelMode: google.maps.TravelMode[selectedMode]
+            travelMode: google.maps.TravelMode.DRIVING
         }, function (response, status)
         {
             if (status == google.maps.DirectionsStatus.OK)
             {
-                directionsDisplay.setDirections(response);
+                setPolyLine(response, color, opacity, weight, map);
             }
             else
             {
@@ -82,8 +113,29 @@
         });
     }
 
+    /**
+     * 设置路线
+     * @param response
+     * @param color
+     * @param opacity
+     * @param weight
+     * @param map
+     */
+    function setPolyLine(response, color, opacity, weight, map)
+    {
+        var latlngs = response.routes[0].overview_path;
+        var path = new google.maps.Polyline({
+            path: latlngs,
+            geodesic: true,
+            strokeColor: color,
+            strokeOpacity: opacity,
+            strokeWeight: weight
+        });
+
+        path.setMap(map);
+    }
 </script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFhhAGX_9cW87jrdz06uDo96iweddwBl4&signed_in=true&callback=initMap"
-        async defer></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFhhAGX_9cW87jrdz06uDo96iweddwBl4&callback=initMap"></script>
 </body>
 </html>

@@ -69,21 +69,18 @@
                                 {$vo["remark"]}
                             </td>
                             <td>
-                                <if condition="$vo['value'] eq 0">
+                                <if condition="$vo['status'] eq 0">
                                     <span style="color:#d58512 ">等待</span>
                                 </if>
-                                <if condition="$vo['value'] eq 1">
-                                    <span style="color: #1155CC">接受</span>
+                                <if condition="$vo['status'] eq 1">
+                                    <span style="color: #1155CC">派送中</span>
                                 </if>
-                                <if condition="$vo['value'] eq 2">
-                                    <span style="color: #269abc ">派送</span>
-                                </if>
-                                <if condition="$vo['value'] eq 3">
-                                    <span style="color: #4cae4c">完成</span>
+                                <if condition="$vo['status'] eq 2">
+                                    <span style="color: #269abc ">完成</span>
                                 </if>
                             </td>
                             <td>
-                                <a href="{:U('Order/getRealTimeLocation',array('address'=>$vo['customer_address']))}">实时位置</a>
+                                <a href="{:U('Order/getRealTimeLocation',array('oid'=>$vo['id'],'address'=>$vo['customer_address']))}">实时位置</a>
                             </td>
                         </tr>
                     </volist>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
@@ -52,19 +52,57 @@
         });
         directionsDisplay.setMap(map);
 
-        calculateAndDisplayRoute(directionsService, directionsDisplay);
+        var restaurantLocation = new Array();
+        restaurantLocation[0] = {$restaurantLocation['lat']};
+        restaurantLocation[1] = {$restaurantLocation['lng']};
+        var restaurantLatLng =  {lat: restaurantLocation[0], lng: restaurantLocation[1]};
+
+        var customerLocation = new Array();
+        customerLocation[0] = {$customerLocation['lat']};
+        customerLocation[1] = {$customerLocation['lng']};
+        var customerLatLng =  {lat: customerLocation[0], lng: customerLocation[1]};
+
+        var driverLocation = new Array();
+        driverLocation[0] = {$driverLocation['lat']};
+        driverLocation[1] = {$driverLocation['lng']};
+        var driverLatLng =  {lat: driverLocation[0], lng: driverLocation[1]};
+
+        var restaurantMarker = new google.maps.Marker({
+            position: restaurantLatLng,
+            map: map,
+            title: '饭店'
+        });
+        var customerMarker = new google.maps.Marker({
+            position: customerLatLng,
+            map: map,
+            title: '客人'
+        });
+        var driverMarker = new google.maps.Marker({
+            position: driverLatLng,
+            map: map,
+            title: 'I am Here'
+        });
+
+
+        //饭店到客人路线
+        calculateAndDisplayRoute(directionsService, directionsDisplay,restaurantLocation,customerLocation);
+        //司机到饭店路线
+//        calculateAndDisplayRoute(directionsService, directionsDisplay,driverLocation,restaurantLocation);
         document.getElementById('mode').addEventListener('change', function ()
         {
-            calculateAndDisplayRoute(directionsService, directionsDisplay);
+            //饭店到客人路线
+            calculateAndDisplayRoute(directionsService, directionsDisplay,restaurantLocation,customerLocation);
+            //司机到饭店路线
+            calculateAndDisplayRoute(directionsService, directionsDisplay,driverLocation,restaurantLocation);
         });
     }
 
-    function calculateAndDisplayRoute(directionsService, directionsDisplay)
+    function calculateAndDisplayRoute(directionsService, directionsDisplay,origin,destination)
     {
         var selectedMode = document.getElementById('mode').value;
         directionsService.route({
-            origin: {lat: <?php echo ($location['lat']); ?>, lng: <?php echo ($location['lng']); ?>},  // Haight.
-            destination: {lat: 45.4500606, lng: -73.59396},  // Ocean Beach.
+            origin: {lat: origin[0], lng: origin[1]},  // Haight.
+            destination: {lat: destination[0], lng: destination[1]},  // Ocean Beach.
             // Note that Javascript allows us to access the constant
             // using square brackets and a string value as its
             // "property."
